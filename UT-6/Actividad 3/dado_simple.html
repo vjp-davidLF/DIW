@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caras del Dado - FlexBox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .cara {
+            width: 130px;
+            height: 130px;
+            background-color: #d81b3c;
+            border: 3px solid #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .punto {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        /* Cara 1 - Un punto */
+        .cara-1 {
+            justify-content: center;
+        }
+
+        /* Cara 2 - Dos puntos */
+        .cara-2 {
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .cara-2 > div {
+            align-self: flex-start;
+        }
+
+        .cara-2 > div:last-child {
+            align-self: flex-end;
+        }
+
+        /* Cara 3 - Tres puntos */
+        .cara-3 {
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .cara-3 > div:nth-child(1) {
+            align-self: flex-start;
+        }
+
+        .cara-3 > div:nth-child(2) {
+            align-self: center;
+        }
+
+        .cara-3 > div:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        /* Cara 4 - Cuatro puntos */
+        .cara-4 {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .cara-4 > div:nth-child(1),
+        .cara-4 > div:nth-child(2) {
+            align-self: flex-start;
+        }
+
+        .cara-4 > div:nth-child(3),
+        .cara-4 > div:nth-child(4) {
+            align-self: flex-end;
+        }
+
+        /* Cara 5 - Cinco puntos */
+        .cara-5 {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .cara-5 > div:nth-child(1),
+        .cara-5 > div:nth-child(2) {
+            align-self: flex-start;
+        }
+
+        .cara-5 > div:nth-child(3) {
+            align-self: center;
+        }
+
+        .cara-5 > div:nth-child(4),
+        .cara-5 > div:nth-child(5) {
+            align-self: flex-end;
+        }
+
+        /* Cara 6 - Seis puntos */
+        .cara-6 {
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .fila-6 {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cara 1 -->
+        <div class="cara cara-1">
+            <div class="punto"></div>
+        </div>
+
+        <!-- Cara 2 -->
+        <div class="cara cara-2">
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+
+        <!-- Cara 3 -->
+        <div class="cara cara-3">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+
+        <!-- Cara 4 -->
+        <div class="cara cara-4">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+
+        <!-- Cara 5 -->
+        <div class="cara cara-5">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+
+        <!-- Cara 6 -->
+        <div class="cara cara-6">
+            <div class="fila-6">
+                <div class="punto"></div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div class="fila-6">
+                <div class="punto"></div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
