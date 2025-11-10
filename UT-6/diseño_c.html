@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño C - Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #e61c3c;
+            color: white;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            background-color: #00cc00;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            background-color: #c0c0c0;
+            border-bottom: 1px solid #a0a0a0;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        nav a:last-child {
+            border-bottom: none;
+        }
+
+
+        nav a:hover {
+            background-color: #0f0f0f;
+            color: antiquewhite;
+        }
+
+        main {
+            flex: 1;
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Diseño C - Flexbox</header>
+        <div class="content-wrapper">
+            <nav>
+                <a href="#enlace1">Enlace 1</a>
+                <a href="#enlace2">Enlace 2</a>
+                <a href="#enlace3">Enlace 3</a>
+                <a href="#enlace4">Enlace 4</a>
+            </nav>
+            <main></main>
+        </div>
+    </div>
+</body>
+</html>

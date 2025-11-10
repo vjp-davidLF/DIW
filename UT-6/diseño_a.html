@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño A - Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #e61c3c;
+            color: white;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #c0c0c0;
+            display: flex;
+            gap: 20px;
+            padding: 15px 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #e2c9c9;
+            background-color: #333;
+        }
+
+        main {
+            flex: 1;
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Diseño A - Flexbox</header>
+        <nav>
+            <a href="#enlace1">Enlace 1</a>
+            <a href="#enlace2">Enlace 2</a>
+            <a href="#enlace3">Enlace 3</a>
+            <a href="#enlace4">Enlace 4</a>
+        </nav>
+        <main></main>
+    </div>
+</body>
+</html>
