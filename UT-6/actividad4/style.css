@@ -1,0 +1,155 @@
+/* Estilos generales de la página */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal de las fichas */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+}
+
+/* Estilo de cada ficha de dominó */
+.domino {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 240px;
+    padding: 15px;
+    margin: 0;
+    border: 3px solid #333;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Secciones superior e inferior de la ficha */
+.top,
+.bottom {
+    display: flex;
+    height: 45%;
+}
+
+/* Línea divisoria */
+.middle {
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Línea divisoria en el centro */
+.middle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    right: 3%;
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    transform: translateY(-50%);
+}
+
+/* Estilo de cada punto del dominó */
+.punto {
+    width: 22px;
+    height: 22px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Espaciado entre los puntos y la línea central */
+.top {
+    margin-bottom: 20px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+/* DISTRIBUCIÓN DE PUNTOS SEGÚN LA CANTIDAD */
+
+/* 1 punto */
+.puntos-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2 puntos */
+.puntos-2 {
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+.puntos-2 .punto:nth-child(2) {
+    align-self: flex-end;
+}
+
+/* 3 puntos */
+.puntos-3 {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 14px;
+}
+
+.puntos-3 .punto:nth-child(2) {
+    align-self: center;
+}
+
+.puntos-3 .punto:nth-child(3) {
+    align-self: flex-end;
+}
+
+/* 4 puntos */
+.puntos-4 {
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+.puntos-4 .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+/* 5 puntos */
+.puntos-5 {
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+.puntos-5 .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.puntos-5 .medio {
+    align-self: center;
+}
+
+/* 6 puntos */
+.puntos-6 {
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+.puntos-6 .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px 0;
+}
