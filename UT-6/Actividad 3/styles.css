@@ -1,0 +1,299 @@
+h1 {
+    color: blue;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+}
+
+.cara {
+    width: 60px;
+    height: 60px;
+    background-color: #d81b3c;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #999;
+}
+
+.cara.cara-2 {
+    display: flex;
+    justify-content: space-between;   
+    width: 60px;
+    height: 60px;
+    background-color: #d81b3c;
+    border-radius: 10px;
+    border: 2px solid #999;
+
+}
+
+.cara.cara-3 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60px;
+    height: 60px;
+    background-color: #d81b3c;
+    border-radius: 10px;
+    border: 2px solid #999;
+}
+
+.cara.cara-4 { 
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60px;
+    height: 60px;
+    background-color: #d81b3c;
+    border-radius: 10px;
+    border: 2px solid #999;
+}
+
+.cara.cara-5 { 
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60px;
+    height: 60px;
+    background-color: #d81b3c;
+    border-radius: 10px;
+    border: 2px solid #999;
+}
+
+.cara.cara-6 { 
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60px;
+    height: 60px;
+    background-color: #d81b3c;
+    border-radius: 10px;
+    border: 2px solid #999;
+}
+
+.punto {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: flex-start;
+    align-items: first baseline;
+}
+
+.cara-2 .punto {
+    align-self: flex-start;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+
+.cara-3 .punto {
+    align-self: flex-start;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.cara-4 .punto {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-5 .punto {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-6 .punto {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.punto2 {
+    align-items: end baseline;
+    justify-content: end;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.cara-2 .punto2 {
+    align-self: flex-end;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.cara-3 .punto2 {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.cara-4 .punto2 {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-5 .punto2 {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-6 .punto2 {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+.cara-3 .punto3 {
+    align-self: flex-end;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-4 .punto3 {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-5 .punto3 {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-6 .punto3 {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.punto4 {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara5 .punto4 {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara6 .punto4 {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-5 .punto5 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cara-6 .punto5 {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+.punto6 {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
