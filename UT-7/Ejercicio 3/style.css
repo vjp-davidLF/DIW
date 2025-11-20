@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cara {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: lfr lfr lfr;
+    grid-template-rows: repeat(3, lfr);
+    border: 2px solid rgb(27, 25, 25);
+    border-radius: 25%;
+    margin: 7px;
+    align-items: center;
+}
+
+.punto {
+    background: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    place-self: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.arriba {
+    grid-row-start: 1;
+}
+
+.medio {
+    grid-row-start: 2;
+}
+
+.abajo {
+    grid-row-start: 3;
+}
+
+.izquierda {
+    grid-column-start: 1;
+}
+
+.centro {
+    grid-column-start: 2;
+}
+
+.derecha {
+    grid-column-start: 3;
+}
