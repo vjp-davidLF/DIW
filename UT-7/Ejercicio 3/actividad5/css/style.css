@@ -1,0 +1,147 @@
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           background-color: rgb(218, 195, 195);
+            color: #f7f7f7;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .board-wrapper {
+            position: relative;
+            border: 30px solid #8f652d;
+            background-color: #ebeae8;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            width: 480px;
+            height: 480px;
+        }
+
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .square:hover {
+            transform: scale(1.05);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .white {
+            background-color: #f5eeee;
+        }
+
+        .black {
+            background-color: rgb(71, 47, 14);
+        }
+
+        /* Coordenadas superiores */
+        .coordinates-top {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .coordinates-top div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+        }
+
+        /* Coordenadas inferiores */
+        .coordinates-bottom {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .coordinates-bottom div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+        }
+
+        /* Coordenadas izquierda */
+        .coordinates-left {
+            position: absolute;
+            left: -25px;
+            top: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .coordinates-left div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 60px;
+        }
+
+        /* Coordenadas derecha */
+        .coordinates-right {
+            position: absolute;
+            right: -25px;
+            top: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .coordinates-right div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 60px;
+        }
+
+        @media (max-width: 600px) {
+            .board {
+                width: 320px;
+                height: 320px;
+            }
+            
+            .coordinates-top,
+            .coordinates-bottom {
+                grid-template-columns: repeat(8, 40px);
+            }
+            
+            .coordinates-left div,
+            .coordinates-right div {
+                height: 40px;
+            }
+        }
